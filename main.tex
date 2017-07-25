@@ -1,9 +1,22 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{calc}
+
+
+\newcommand{\ancienprez}{Rémi Dulong}
+\newcommand{\nouveauprez}{Florian Grante}
+\newcounter{annee}
+\setcounter{annee}{2017}
+
+
+\newcounter{anneeprec}
+\setcounter{anneeprec}{\value{annee} -1}
+\newcounter{anneesuiv}
+\setcounter{anneesuiv}{\value{annee} +1}
 
 %opening
-\title{}
-\author{}
+\title{Dossier de passation \theannee - \theanneesuiv}
+\author{\ancienprez}
 
 \begin{document}
 
@@ -13,6 +26,19 @@
 
 \end{abstract}
 
-\section{}
+\section{Résumé de la passation}
+La passation de présidence INTech a eu lieu, comme chaque année, après l'annonce des résultats de la Coupe de France de robotique, 
+évènement qui clôture notre année associative. En tant que président de l'année \theanneeprec - \theannee \space je cède donc ma place à 
+\nouveauprez, élu par les membres du club.
+
+\section{Le rôle du président}
+Le président d'INTech doit s'assurer du bon fonctionnement du club. Il est responsable de l'animation des réunions internes,
+des relations avec nos partenaires, nos sponsors, les autres associations du campus, l'administration des deux écoles, et de la gestion du budget.
+Il doit aussi assurer la communication avec MiNET,puisque INTech est avant tout un club de l'association MiNET. \newline
+
+Le président est chargé de donner au club l'orientation souhaitée par ses membres. Pour cela, il doit être à l'écoute des avis de ses membres.
+Cela fait maintenant plus de 20 ans que nous focalisons notre activité sur la Coupe de France de robotique : si cette motivation venait à changer, il faudrait toujours 
+faire le maximum pour que le club assure son rôle, à savoir la transmission de nos connaissances aux nouveaux arrivants à l'école
+curieux de découvrir la robotique ou l'électronique. C'est ce qui doit être la motivation première du président du club.
 
 \end{document}
